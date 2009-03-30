@@ -1,0 +1,14 @@
+DisableMassAssignment
+=====================
+
+This plugin sets attr_accessible to nil on the ActiveRecord::Base object, thus disabling mass assignment by default.
+
+In each of your ActiveRecord models you will need to declare which attributes can be mass assigned by using attr_accessible.
+
+Example
+=======
+
+attr_accessible :email, :first_name, :last_name
+
+
+Copyright (c) 2009 Gareth Townsend, released under the MIT license
